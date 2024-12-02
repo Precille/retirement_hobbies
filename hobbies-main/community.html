@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Hobby Explorer</title>
+    <link rel="stylesheet" href="com.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link href="header.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+   <header>
+        <nav>
+            <div class="navbar-header">
+                <a href="index.php" class="navbar-brand">
+                    <div class="logo-container">
+                        <img src="images/Screenshot_2024-11-04_113100-removebg-preview.png" alt="Logo" class="logo"> <!-- Replace with your logo path -->
+                    </div>
+                </a>
+            </div>
+            <ul id="navbarList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <button class="menuToggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+    
+
+    <!-- Community Section -->
+    <section class="community fade-in">
+        <h1>Community Forum</h1>
+        <p>Share your hobby experiences, tips, and connect with others!</p>
+
+        <!-- New Post Form -->
+        <div class="new-post slide-in">
+            <h2>Create a New Post</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Post Title" required>
+                <textarea id="postContent" placeholder="Share your experience..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+
+        <!-- Posts Section -->
+        <div class="posts">
+            <h2>Community Posts</h2>
+
+            <!-- Example Post -->
+            <div class="post slide-in">
+                <h3>My First Painting</h3>
+                <p>I tried painting for the first time and absolutely loved it! Any tips for beginners?</p>
+                <p class="post-info">Posted by: User123 - 2 hours ago</p>
+
+                <!-- Comments Section -->
+                <div class="comments">
+                    <h4>Comments</h4>
+                    <div class="comment">
+                        <p><strong>ArtistGuy:</strong> Start with simple shapes and build up!</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>NewbiePainter:</strong> Try using basic colors first, then explore more.</p>
+                    </div>
+
+                    <!-- Add Comment Form -->
+                    <form class="comment-form">
+                        <input type="text" placeholder="Your comment..." required>
+                        <button type="submit">Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // script.js
+
+// Select the form and posts container
+const postForm = document.getElementById('postForm');
+const postsContainer = document.querySelector('.posts');
+
+// Add new post
+postForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const title = document.getElementById('postTitle').value;
+    const content = document.getElementById('postContent').value;
+
+    // Create new post element
+    const newPost = document.createElement('div');
+    newPost.classList.add('post', 'slide-in'); // Adds slide-in animation
+    newPost.innerHTML = `
+        <h3>${title}</h3>
+        <p>${content}</p>
+        <p class="post-info">Posted just now</p>
+        <div class="comments">
+            <h4>Comments</h4>
+            <form class="comment-form">
+                <input type="text" placeholder="Your comment..." required>
+                <button type="submit">Comment</button>
+            </form>
+        </div>
+    `;
+
+    // Add new post to the posts container
+    postsContainer.appendChild(newPost);
+
+    // Clear the form
+    postForm.reset();
+
+    // Add comment functionality to the new post
+    const commentForm = newPost.querySelector('.comment-form');
+    commentForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const commentText = this.querySelector('input').value;
+        const comment = document.createElement('div');
+        comment.classList.add('comment');
+        comment.innerHTML = `<p><strong>You:</strong> ${commentText}</p>`;
+        this.parentNode.insertBefore(comment, this);
+        this.reset();
+    });
+});
+
+         // Get the menu toggle button and navbar list
+ const menuToggle = document.getElementById('menuToggle');
+ const navbarList = document.getElementById('navbarList');
+
+ // Add click event to toggle the menu
+ menuToggle.addEventListener('click', function() {
+     navbarList.classList.toggle('active');
+     menuToggle.classList.toggle('active');
+     console.log("Menu toggled");
+ });
+        </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

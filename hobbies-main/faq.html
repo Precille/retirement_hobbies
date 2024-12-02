@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link href="header.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Document</title>
+    <style>
+        #faq {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Increased margin for spacing */
+    padding: 20px; /* Increased padding for a better look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+    transition: background-color 0.3s;
+}
+
+.faq-item h3 {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.faq-item h3:hover {
+    text-decoration: underline;
+}
+
+.faq-item p {
+    color: #555;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+   <header>
+        <nav>
+            <div class="navbar-header">
+                <a href="index.php" class="navbar-brand">
+                    <div class="logo-container">
+                        <img src="images/Screenshot_2024-11-04_113100-removebg-preview.png" alt="Logo" class="logo"> <!-- Replace with your logo path -->
+                    </div>
+                </a>
+            </div>
+            <ul id="navbarList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <button class="menuToggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+<section id="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-item">
+            <h3>1. What are some popular hobbies for retirees?</h3>
+            <p>Popular hobbies for retirees include gardening, painting, woodworking, volunteering, traveling, reading, cooking, and playing musical instruments. Exploring new interests can also be a fulfilling way to spend time.</p>
+        </div>
+        <div class="faq-item">
+            <h3>2. How can I find a hobby that I enjoy?</h3>
+            <p>Consider your interests and passions from your working life, and think about activities you've always wanted to try. You can also take classes, join local clubs, or attend community events to discover what you enjoy.</p>
+        </div>
+        <div class="faq-item">
+            <h3>3. Are there hobbies that are specifically beneficial for seniors?</h3>
+            <p>Yes! Hobbies like walking, yoga, or swimming can promote physical health, while activities like puzzles, reading, and learning a new language can keep the mind sharp. Creative hobbies, such as drawing or writing, can also provide emotional benefits.</p>
+        </div>
+        <div class="faq-item">
+            <h3>4. Can I turn my hobby into a business during retirement?</h3>
+            <p>Absolutely! Many retirees turn their hobbies into small businesses, whether it’s selling handmade crafts, teaching classes, or consulting in their area of expertise. Consider your skills and market demand to find opportunities.</p>
+        </div>
+        <div class="faq-item">
+            <h3>5. How do I stay motivated to pursue my hobbies?</h3>
+            <p>Set realistic goals, join groups or clubs to meet others with similar interests, and keep a schedule to ensure you dedicate time to your hobbies. Remind yourself of the joy and relaxation these activities bring.</p>
+        </div>
+        <div class="faq-item">
+            <h3>6. What are some low-cost hobbies I can pursue?</h3>
+            <p>Many hobbies can be enjoyed on a budget, such as hiking, gardening, reading, writing, bird watching, or crafting with materials you already have. Libraries and community centers often offer free or low-cost classes and events.</p>
+        </div>
+        <div class="faq-item">
+            <h3>7. How can I connect with others who share my hobbies?</h3>
+            <p>Join local clubs, attend workshops, or participate in online forums and social media groups. Community centers and senior centers often host events and activities for retirees to meet and share interests.</p>
+        </div>
+        <div class="faq-item">
+            <h3>8. What if I want to try multiple hobbies?</h3>
+            <p>Trying out several hobbies is a great way to discover your passions! Consider starting with a few activities that interest you and see which ones you enjoy the most. It’s perfectly fine to explore and change your focus as you go.</p>
+        </div>
+        <div class="faq-item">
+            <h3>9. How can I balance my hobbies with other retirement activities?</h3>
+            <p>Plan your schedule to include a variety of activities, balancing hobbies with relaxation, socializing, and any other commitments you may have. Flexibility is key—allow yourself to adapt your plans based on your interests and energy levels.</p>
+        </div>
+        <div class="faq-item">
+            <h3>10. What resources are available for learning new hobbies?</h3>
+            <p>Many resources are available, including books, online tutorials, community college courses, and local workshops. Websites like YouTube and online learning platforms offer a wealth of instructional videos for various hobbies.</p>
+        </div>
+    </div>
+</section>
+    <script>
+         // Get the menu toggle button and navbar list
+ const menuToggle = document.getElementById('menuToggle');
+ const navbarList = document.getElementById('navbarList');
+
+ // Add click event to toggle the menu
+ menuToggle.addEventListener('click', function() {
+     navbarList.classList.toggle('active');
+     menuToggle.classList.toggle('active');
+     console.log("Menu toggled");
+ });
+    </script>
+<script src="js/script.js"></script>
+</body>
+</html>

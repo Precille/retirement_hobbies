@@ -1,0 +1,401 @@
+
+
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: #9A7E6F; /* Warm brown background for hero */
+    color: #E9EED9; /* Light text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Category grid styling */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Base card styling */
+.card {
+    position: relative;
+    overflow: hidden;
+    color: #E9EED9; /* Light text for cards */
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+/* Add a pseudo-element for the background image */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+/* Add a black gradient overlay */
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+/* Zoom effect and increase overlay opacity on hover */
+.card:hover::before {
+    transform: scale(1.2);
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+/* Additional hover effect on cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #CBD2A4; /* Soft green border */
+    border-radius: 4px;
+    background-color: #E9EED9; /* Light background */
+    color: #54473F; /* Dark text */
+}
+
+form button {
+    background: #9A7E6F; /* Brown background for buttons */
+    color: #E9EED9; /* Light text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #54473F; /* Darker hover color */
+}
+
+/* Hobby-specific background images */
+
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Places the video behind the content */
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* To prevent overflow */
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: 1; /* Keeps the video behind the text */
+}
+
+.text-container {
+    position: relative; /* Ensure this is above the video */
+    z-index: 2; /* Place this above the video */
+    padding: 20px; /* Adds some padding for spacing */
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    display: inline-block; /* Only take up as much space as needed */
+}
+
+.text-container h1, .text-container p {
+    margin: 0; /* Removes default margin */
+}
+
+
+.search-container {
+    text-align: center; /* Center the search form */
+    margin-bottom: 20px; /* Space between search and category grid */
+}
+
+#search-form {
+    display: inline-block; /* Align the search form */
+}
+
+#search-input {
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners */
+    width: 300px; /* Set a fixed width */
+}
+
+button {
+    padding: 10px 15px; /* Padding for button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between input and button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* About Section */
+#about {
+    padding: 50px 10px;
+    background-color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    color: #54473F;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Animation on Scroll */
+[data-aos="fade-right"],
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(30px);
+}
+
+[data-aos="fade-right"].aos-animate,
+[data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Explore Button Styling */
+.explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #54473F;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #CBD2A4;
+    transform: scale(1.05);
+    color: #54473F;
+}
+
+
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    transition: opacity 0.5s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for content */
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    animation: scaleUp 0.5s ease;
+}
+
+
+/* Styles for the Types section in the modal */
+#modal-types {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    list-style-type: none; /* Remove default bullet points */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for emphasis */
+}
+
+#modal-types li {
+    color: #333; /* Text color */
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: #e6f2ff; /* Slightly darker shade for list items */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+/* Optional hover effect for list items */
+#modal-types li:hover {
+    background-color: #d1e7ff; /* Darker shade on hover */
+}
+
+/* Modal image styling with shadow */
+#modal-image {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for larger screens */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Optional transition for a zoom effect */
+}
+
+/* Optional hover effect to slightly enlarge the image */
+#modal-image:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
+.modal-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #0072CE;
+}
+
+/* Animations */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link href="header.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>About Us - Retirement Hobbies</title>
+    <style>
+        #hobby-benefits {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Optional: Background for the section */
+}
+
+/* Responsive Design for the benefits-box */
+.benefits-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+    text-align: left; /* Align text to the left */
+}
+
+/* Make the text more readable on small screens */
+.benefits-box h2 {
+    font-size: 1.5rem; /* Adjust title size */
+}
+
+.benefits-box ul {
+    padding: 0;
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.benefits-box ul li {
+    margin-bottom: 10px; /* Add space between list items */
+    font-size: 1rem; /* Ensure readable font size */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .benefits-box {
+        padding: 15px;
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .benefits-box h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-box {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .benefits-box ul li {
+        font-size: 0.85rem; /* Adjust list item text size */
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+   <header>
+        <nav>
+            <div class="navbar-header">
+                <a href="index.php" class="navbar-brand">
+                    <div class="logo-container">
+                        <img src="images/Screenshot_2024-11-04_113100-removebg-preview.png" alt="Logo" class="logo"> <!-- Replace with your logo path -->
+                    </div>
+                </a>
+            </div>
+            <ul id="navbarList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <button class="menuToggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+<section id="about">
+    <div class="about-container">
+        <div class="about-text" data-aos="fade-right">
+            <h2>About Retirement Hobbies</h2>
+            <p>At Retirement Hobbies, we believe retirement is a time for exploration, creativity, and connection. Our mission is to provide retirees with inspiring ideas, resources, and a community to discover and enjoy hobbies that bring joy, relaxation, and fulfillment. Whether you're looking to pick up painting, gardening, cooking, or learning a musical instrument, Retirement Hobbies is here to help you explore new passions and make the most of this exciting chapter.</p>
+            <p>Hobbies not only offer a way to fill your time but also serve as a fantastic avenue for self-expression, social engagement, and mental stimulation. Engaging in a hobby can significantly enhance your overall well-being, help you meet new friends, and keep your mind sharp.</p>
+            <a href="index.html" class="explore-button">Explore More</a>
+        </div>
+        <div class="about-image" data-aos="fade-left">
+            <img src="images/retirement_hobbies.jpg" alt="Enjoying retirement hobbies">
+        </div>
+    </div>
+</section>
+
+<section id="hobby-benefits">
+    <div class="benefits-container">
+        <div class="benefits-box"> <!-- Added this div for box styling -->
+            <h2>The Benefits of Hobbies</h2>
+            <p>Hobbies can provide numerous benefits, especially in retirement. Here are just a few reasons to consider picking up a new hobby:</p>
+            <ul>
+                <li><strong>Boost Creativity:</strong> Engaging in creative activities like painting or writing can enhance your creative thinking and problem-solving skills.</li>
+                <li><strong>Physical Health:</strong> Hobbies such as gardening, dancing, or hiking encourage physical activity, promoting better health and fitness.</li>
+                <li><strong>Mental Stimulation:</strong> Activities like learning a musical instrument or taking up a new language challenge your brain and improve cognitive functions.</li>
+                </ul>
+            <p>So why wait? Embrace your retirement as a time to explore new hobbies and rediscover old passions!</p>
+        </div> <!-- Closing the added div -->
+    </div>
+</section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+
+     // Get the menu toggle button and navbar list
+ const menuToggle = document.getElementById('menuToggle');
+ const navbarList = document.getElementById('navbarList');
+
+ // Add click event to toggle the menu
+ menuToggle.addEventListener('click', function() {
+     navbarList.classList.toggle('active');
+     menuToggle.classList.toggle('active');
+     console.log("Menu toggled");
+ });
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

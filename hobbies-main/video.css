@@ -1,0 +1,53 @@
+/* Base styling for hero section */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    color: #E9EED9;
+    text-align: center;
+    overflow: hidden; /* Ensure the video doesn’t overflow the section */
+}
+
+/* Video Styling */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the whole section */
+    z-index: -1; /* Places video below content */
+}
+
+/* Content overlay */
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures content is above video */
+}
+
+/* Play/Pause Button */
+#play-pause-button {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #E9EED9;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+/* Show button on hover over the video */
+.hero:hover #play-pause-button {
+    display: block;
+    opacity: 0.8;
+}
+
+#play-pause-button:hover {
+    opacity: 1;
+}

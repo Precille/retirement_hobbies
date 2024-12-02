@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link href="images.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <div class="navbar-header">
+                <a href="index.php" class="navbar-brand">
+                    <div class="logo-container">
+                        <img src="images/Screenshot_2024-11-04_113100-removebg-preview.png" alt="Logo" class="logo"> <!-- Replace with your logo path -->
+                    </div>
+                </a>
+            </div>
+            <ul id="navbarList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger icon -->
+            <button class="menuToggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+    
+<!-- Hero Section -->
+<section id="home" class="hero" data-aos="fade-in">
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="video/hobbies.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="text-container">
+        <h1>Retirement Hobbies</h1>
+        <p>Explore new hobbies, from arts to adventure!</p>
+    </div>
+
+    
+</section>
+
+
+
+<div class="category-grid" id="hobby-list">
+    <!-- Each card includes data-aos for animation on scroll -->
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Painting</h3>
+        <p>Bring your creativity to life with colors.</p>
+    </div>
+    <div class="card outdoor-activities" data-aos="zoom-in">
+        <h3>Gardening</h3>
+        <p>Find peace in growing and nurturing plants.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Photography</h3>
+        <p>Capture the beauty around you.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Cooking</h3>
+        <p>Discover the joy of creating delicious dishes.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Knitting</h3>
+        <p>Craft beautiful items with yarn and needles.</p>
+    </div>
+    <div class="card sports-fitness" data-aos="zoom-in">
+        <h3>Cycling</h3>
+        <p>Explore the outdoors and stay fit on two wheels.</p>
+    </div>
+    <div class="card outdoor-activities" data-aos="zoom-in">
+        <h3>Hiking</h3>
+        <p>Connect with nature and explore new trails.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Writing</h3>
+        <p>Express yourself through stories, articles, or poetry.</p>
+    </div>
+    <div class="card sports-fitness" data-aos="zoom-in">
+        <h3>Yoga</h3>
+        <p>Improve flexibility and find inner peace.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Coding</h3>
+        <p>Create software, websites, or apps with code.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Woodworking</h3>
+        <p>Build and craft items from wood.</p>
+    </div>
+    <div class="card outdoor-activities" data-aos="zoom-in">
+        <h3>Birdwatching</h3>
+        <p>Observe and learn about various bird species.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Drawing</h3>
+        <p>Sketch your ideas and bring them to life on paper.</p>
+    </div>
+    <div class="card music-performing" data-aos="zoom-in">
+        <h3>Dancing</h3>
+        <p>Move to the rhythm and express yourself through dance.</p>
+    </div>
+    <div class="card outdoor-activities" data-aos="zoom-in">
+        <h3>Fishing</h3>
+        <p>Relax and enjoy the tranquility of fishing.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Chess</h3>
+        <p>Challenge your mind with strategic moves.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Scuba Diving</h3>
+        <p>Explore the underwater world.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Camping</h3>
+        <p>Enjoy the outdoors and experience nature.</p>
+    </div>
+    <div class="card music-performing" data-aos="zoom-in">
+        <h3>Playing Guitar</h3>
+        <p>Create music and improve your guitar skills.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Learning Languages</h3>
+        <p>Open doors to new cultures and communication.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Pottery</h3>
+        <p>Shape and mold beautiful pieces of art.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Quilting</h3>
+        <p>Sew together patterns and make cozy blankets.</p>
+    </div>
+    <div class="card sports-fitness" data-aos="zoom-in">
+        <h3>Martial Arts</h3>
+        <p>Build strength, discipline, and self-defense skills.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Sculpting</h3>
+        <p>Craft forms from clay, stone, or other materials.</p>
+    </div>
+    <div class="card sports-fitness" data-aos="zoom-in">
+        <h3>Rock Climbing</h3>
+        <p>Challenge yourself with physical endurance and strategy.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Origami</h3>
+        <p>Fold paper into intricate designs and figures.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Baking</h3>
+        <p>Craft delicious treats and baked goods.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Astrophotography</h3>
+        <p>Capture stunning images of the night sky.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Wine Tasting</h3>
+        <p>Explore and enjoy different flavors of wine.</p>
+    </div>
+    <div class="card outdoor-activities" data-aos="zoom-in">
+        <h3>Kite Flying</h3>
+        <p>Feel the wind with colorful kites in the sky.</p>
+    </div>
+    <div class="card music-performing" data-aos="zoom-in">
+        <h3>Stand-Up Comedy</h3>
+        <p>Make people laugh and hone your comedic skills.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Jewelry Making</h3>
+        <p>Create unique accessories and pieces of art.</p>
+    </div>
+    <div class="card sports-fitness" data-aos="zoom-in">
+        <h3>Surfing</h3>
+        <p>Ride the waves and enjoy the ocean.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Scrapbooking</h3>
+        <p>Preserve memories in a creative way.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Magic Tricks</h3>
+        <p>Amaze friends with illusions and sleight of hand.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Soap Making</h3>
+        <p>Craft natural soaps with unique fragrances.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Model Building</h3>
+        <p>Build scale models of vehicles, planes, or ships.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Filmmaking</h3>
+        <p>Create videos and tell compelling stories.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Astrology</h3>
+        <p>Study the stars and explore astrology.</p>
+    </div>
+    <div class="card outdoor-activities" data-aos="zoom-in">
+        <h3>Birdhouse Building</h3>
+        <p>Create cozy homes for birds in your backyard.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Metal Detecting</h3>
+        <p>Explore and find hidden treasures.</p>
+    </div>
+    <div class="card writing-intellectual" data-aos="zoom-in">
+        <h3>Board Games</h3>
+        <p>Engage in fun and strategic board games with friends.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Fossil Hunting</h3>
+        <p>Discover ancient artifacts and fossils.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Beekeeping</h3>
+        <p>Learn to keep bees and harvest honey.</p>
+    </div>
+    <div class="card arts-crafts" data-aos="zoom-in">
+        <h3>Calligraphy</h3>
+        <p>Create beautiful writing and artistic letters.</p>
+    </div>
+    <div class="card adventure-exploration" data-aos="zoom-in">
+        <h3>Virtual Reality Gaming</h3>
+        <p>Immerse yourself in virtual worlds.</p>
+    </div>
+    <div class="card sports-fitness" data-aos="zoom-in">
+        <h3>Parkour</h3>
+        <p>Navigate through obstacles using physical agility.</p>
+    </div>
+</div>
+
+    </section>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+    <div class="modal-content" data-aos="fade-up">
+        <span class="close">&times;</span>
+        <img src="" alt="Hobby Image" id="modal-image" class="modal-image">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <ul id="modal-types"></ul>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS for animations
+    </script>
+
+    <script>
+
+        // Get modal elements
+const modal = document.getElementById("modal");
+const modalImage = document.getElementById("modal-image");
+const modalTitle = document.getElementById("modal-title");
+const modalDescription = document.getElementById("modal-description");
+const modalTypes = document.getElementById("modal-types");
+const closeModal = document.querySelector(".close");
+
+const hobbyData = {
+    "Painting": {
+        image: "images/painting.jpg",
+        description: "Express yourself with vibrant colors and brush strokes. Painting allows you to unleash your creativity, providing a therapeutic escape from everyday stress. Whether you prefer acrylic, watercolor, or oil, each medium offers a unique way to capture your emotions and observations.",
+        types: ["Acrylic Painting", "Watercolor", "Oil Painting", "Digital Art"]
+    },
+    "Gardening": {
+        image: "images/gardening.jpg",
+        description: "Connect with nature by growing and nurturing plants. Gardening is not only a rewarding activity that beautifies your environment, but it also promotes mental health and well-being. It teaches patience and responsibility, and offers fresh produce or flowers as a delightful reward.",
+        types: ["Indoor Gardening", "Vegetable Gardening", "Flower Gardening"]
+    },
+    "Photography": {
+        image: "images/photography.jpg",
+        description: "Capture the beauty around you through your lens. Photography is a powerful means of storytelling, allowing you to freeze moments in time. From portraits to landscapes, each photograph can convey emotions and perspectives that words cannot express.",
+        types: ["Portrait Photography", "Landscape Photography", "Wildlife Photography"]
+    },
+    "Cooking": {
+        image: "images/cooking.jpg",
+        description: "Discover the joy of creating delicious dishes. Cooking is an art that combines flavors, cultures, and techniques. It’s a fantastic way to express creativity while also nurturing yourself and others. Experimenting with recipes can be both fun and rewarding.",
+        types: ["Baking", "Grilling", "Healthy Cooking"]
+    },
+    "Knitting": {
+        image: "images/knitting.jpg",
+        description: "Craft beautiful items with yarn and needles. Knitting is a relaxing hobby that can produce cozy garments and accessories. The rhythmic motion of knitting is meditative, and each completed project gives a sense of accomplishment.",
+        types: ["Scarves", "Sweaters", "Blankets"]
+    },
+    "Cycling": {
+        image: "images/cycling.jpg",
+        description: "Explore the outdoors and stay fit on two wheels. Cycling is an excellent way to improve cardiovascular health while enjoying the scenery. Whether on city streets or rugged trails, cycling can be both an invigorating workout and a relaxing pastime.",
+        types: ["Mountain Biking", "Road Cycling", "BMX"]
+    },
+    "Hiking": {
+        image: "images/hiking.jpg",
+        description: "Connect with nature and explore new trails. Hiking offers a great way to experience the outdoors, providing physical exercise and mental clarity. With each trail conquered, you gain a deeper appreciation for nature's beauty and the tranquility it brings.",
+        types: ["Day Hikes", "Backpacking", "Nature Walks"]
+    },
+    "Writing": {
+        image: "images/writing.jpg",
+        description: "Express yourself through stories, articles, or poetry. Writing is a profound way to articulate thoughts and share experiences. Whether you enjoy fiction, non-fiction, or poetry, writing allows you to explore ideas and emotions deeply.",
+        types: ["Fiction", "Non-Fiction", "Poetry"]
+    },
+    "Yoga": {
+        image: "images/yoga.jpg",
+        description: "Improve flexibility and find inner peace. Yoga is a holistic practice that combines physical postures, breathing exercises, and meditation. It promotes both physical health and mental well-being, making it a valuable addition to any self-care routine.",
+        types: ["Hatha Yoga", "Vinyasa Yoga", "Yin Yoga"]
+    },
+    "Coding": {
+        image: "images/coding.jpg",
+        description: "Create software, websites, or apps with code. Coding is a modern skill that opens up endless possibilities for creativity and problem-solving. Whether you want to build applications, games, or websites, learning to code empowers you to bring your ideas to life.",
+        types: ["Web Development", "Game Development", "Data Science"]
+    },
+    "Woodworking": {
+        image: "images/woodworking.jpg",
+        description: "Build and craft items from wood. Woodworking is both a practical and artistic hobby. It combines creativity with technical skills, allowing you to create functional pieces and beautiful works of art. From furniture to intricate carvings, woodworking can be incredibly rewarding.",
+        types: ["Furniture Making", "Wood Carving", "Cabinet Making"]
+    },
+    "Birdwatching": {
+        image: "images/birdwatching.jpg",
+        description: "Observe and learn about various bird species. Birdwatching is a peaceful and educational hobby that fosters a deeper connection with wildlife. It encourages patience and observation, offering a chance to witness nature's beauty up close.",
+        types: ["Backyard Birdwatching", "Bird Photography", "Field Studies"]
+    },
+    "Drawing": {
+        image: "images/drawing.jpg",
+        description: "Sketch your ideas and bring them to life on paper. Drawing is a fundamental form of artistic expression that can be practiced anywhere. It enhances observation skills and allows you to communicate visually, whether through detailed illustrations or simple doodles.",
+        types: ["Pencil Drawing", "Charcoal Drawing", "Digital Drawing"]
+    },
+    "Dancing": {
+        image: "images/dancing.jpg",
+        description: "Move to the rhythm and express yourself through dance. Dancing is a joyful activity that promotes physical fitness and emotional expression. Whether you prefer ballet, hip-hop, or salsa, dancing allows you to connect with music and others in a fun way.",
+        types: ["Ballet", "Hip-Hop", "Salsa"]
+    },
+    "Fishing": {
+        image: "images/fishing.jpg",
+        description: "Relax and enjoy the tranquility of fishing. Fishing is a calming hobby that provides a peaceful escape into nature. It encourages mindfulness and patience, allowing you to unwind while enjoying the beauty of your surroundings.",
+        types: ["Fly Fishing", "Ice Fishing", "Deep Sea Fishing"]
+    },
+    "Chess": {
+        image: "images/chess.jpg",
+        description: "Challenge your mind with strategic moves. Chess is a timeless game that sharpens your critical thinking and strategic skills. It’s a mental workout that can be enjoyed casually or competitively, providing endless opportunities for learning and improvement.",
+        types: ["Standard Chess", "Blitz Chess", "Chess Puzzles"]
+    },
+    "Scuba Diving": {
+        image: "images/scuba_diving.jpg",
+        description: "Explore the underwater world. Scuba diving opens up a realm of adventure beneath the waves. It allows you to experience the beauty of marine life up close, fostering a deep appreciation for ocean ecosystems and promoting conservation.",
+        types: ["Recreational Diving", "Wreck Diving", "Cave Diving"]
+    },
+    "Camping": {
+        image: "images/camping.jpg",
+        description: "Enjoy the outdoors and experience nature. Camping is a wonderful way to disconnect from technology and reconnect with nature. It fosters a sense of adventure and community, providing opportunities for storytelling around the campfire and stargazing under the night sky.",
+        types: ["Tent Camping", "RV Camping", "Backpacking"]
+    },
+    "Playing Guitar": {
+        image: "images/guitar.jpg",
+        description: "Create music and improve your guitar skills. Playing the guitar is a fulfilling way to express yourself through music. It can be a solo endeavor or a social activity, bringing people together and creating memorable moments.",
+        types: ["Acoustic Guitar", "Electric Guitar", "Classical Guitar"]
+    },
+    "Learning Languages": {
+        image: "images/languages.jpg",
+        description: "Open doors to new cultures and communication. Learning languages broadens your horizons and enhances your understanding of the world. It fosters connections with diverse cultures and people, enriching your personal and professional life.",
+        types: ["Spanish", "French", "Mandarin"]
+    },
+    "Pottery": {
+        image: "images/pottery.jpg",
+        description: "Shape and mold beautiful pieces of art. Pottery is a tactile and creative hobby that allows you to express your artistic vision through clay. The process of creating pottery can be therapeutic, and the finished pieces can be both functional and decorative.",
+        types: ["Hand-building", "Wheel-throwing", "Glazing"]
+    },
+    "Quilting": {
+        image: "images/quilt.jpg",
+        description: "Sew together patterns and make cozy blankets. Quilting combines creativity and craftsmanship, allowing you to create beautiful, functional pieces. It’s a rewarding hobby that encourages attention to detail and can be shared with family and friends.",
+        types: ["Traditional Quilting", "Modern Quilting", "Patchwork"]
+    },
+    "Martial Arts": {
+        image: "images/martial_arts.jpg",
+        description: "Build strength, discipline, and self-defense skills. Martial arts training promotes physical fitness, mental discipline, and self-confidence. It teaches valuable life skills such as focus and perseverance, and it can be a powerful means of self-defense.",
+        types: ["Karate", "Taekwondo", "Judo"]
+    },
+    "Sculpting": {
+        image: "images/sculpting.jpg",
+        description: "Craft forms from clay, stone, or other materials. Sculpting is a three-dimensional art form that encourages creativity and spatial awareness. It allows you to bring your artistic ideas to life and explore textures and forms in unique ways.",
+        types: ["Clay Sculpting", "Stone Carving", "Metal Sculpting"]
+    },
+    "Rock Climbing": {
+        image: "images/rock_climbing.jpg",
+        description: "Challenge yourself physically and mentally on the climbing wall. Rock climbing promotes physical fitness and mental health",
+        types: ["Indoor Climbing", "Bouldering", "Trad Climbing"]
+    },
+    "Origami": {
+        image: "images/origami.jpg",
+        description: "Origami is the art of folding paper into intricate designs and figures, transforming a simple sheet of paper into beautiful creations. This hobby enhances creativity, patience, and precision, allowing you to create everything from simple shapes to complex models. It’s a perfect blend of art and mathematics that can be both relaxing and challenging.",
+        types: ["Traditional Origami", "Modular Origami", "Wet-Folding"]
+    },
+    "Baking": {
+        image: "images/baking.jpg",
+        description: "Baking is the delightful art of creating sweet and savory goods, from bread and pastries to cakes and cookies. This hobby combines science and creativity, allowing you to experiment with flavors and techniques. Baking can be therapeutic, offering a sense of accomplishment and the joy of sharing delicious treats with family and friends.",
+        types: ["Bread Baking", "Pastry Making", "Cake Decorating"]
+    },
+    "Astrophotography": {
+        image: "images/astrophotography.jpg",
+        description: "Astrophotography is a specialized form of photography focused on capturing celestial bodies and phenomena in the night sky. This hobby requires patience, technical skills, and a keen eye for detail as you explore the cosmos through your camera. It’s a stunning way to appreciate the universe's beauty and share it with others, whether through images of stars, planets, or nebulae.",
+        types: ["Wide-Field Astrophotography", "Planetary Imaging", "Deep-Sky Imaging"]
+    },
+    "Wine Tasting": {
+        image: "images/wine_tasting.jpg",
+        description: "Wine tasting is the exploration of different varieties, regions, and flavors of wine. This hobby involves developing your palate and learning to appreciate the subtle differences in aroma, taste, and texture. It often includes vineyard visits, food pairings, and social gatherings, making it a perfect way to enjoy good company while indulging in the nuances of fine wines.",
+        types: ["Red Wine", "White Wine", "Sparkling Wine"]
+    },
+    "Kite Flying": {
+        image: "images/kite_flying.jpg",
+        description: "Kite flying is a joyful outdoor activity that combines art and aerodynamics. It involves crafting or purchasing kites and taking them to open spaces where they can soar high in the sky. This hobby provides a sense of freedom and connection with nature as you feel the wind while controlling your kite. It’s also a great way to spend time with family and friends while enjoying the great outdoors.",
+        types: ["Stunt Kites", "Single-Line Kites", "Box Kites"]
+    },
+    "Stand-Up Comedy": {
+        image: "images/stand_up_comedy.jpg",
+        description: "Stand-up comedy is the art of delivering humor to an audience through storytelling, anecdotes, and observations. This engaging hobby involves writing jokes, performing in front of audiences, and honing your comedic timing and delivery. It’s a fantastic way to express yourself and connect with others, often resulting in laughter and enjoyment for both the performer and the audience.",
+        types: ["Improv Comedy", "Observational Comedy", "Storytelling"]
+    },
+    "Jewelry Making": {
+        image: "images/jewelry_making.jpg",
+        description: "Jewelry making is a creative process that involves designing and crafting unique accessories, from simple beaded pieces to intricate metalwork. This hobby allows for personal expression and creativity, as you can experiment with materials, colors, and styles. Whether you’re making gifts for loved ones or creating pieces for yourself, jewelry making can be both fulfilling and rewarding.",
+        types: ["Beading", "Metalworking", "Wire Wrapping"]
+    },
+    "Surfing": {
+        image: "images/surfing.jpg",
+        description: "Surfing is an exhilarating water sport that involves riding waves on a surfboard. This hobby requires physical fitness, balance, and a connection with nature as you navigate the ocean. Surfing can be both challenging and rewarding, offering a sense of adventure and accomplishment while enjoying the thrill of catching waves and the beauty of the coastline.",
+        types: ["Shortboard", "Longboard", "Bodyboarding"]
+    },
+    "Scrapbooking": {
+        image: "images/scrapbooking.jpg",
+        description: "Scrapbooking is a creative way to preserve memories through photos, embellishments, and journaling. This hobby allows you to tell your personal stories and document important life events in a visually appealing format. It encourages creativity and self-expression, making it a wonderful activity for individuals or families to cherish their memories together.",
+        types: ["Traditional Scrapbooking", "Digital Scrapbooking", "Art Journaling"]
+    },
+    "Magic Tricks": {
+        image: "images/magic_tricks.jpg",
+        description: "Magic tricks are performances designed to entertain and astonish audiences through illusion and sleight of hand. This captivating hobby involves learning various techniques and routines to create a sense of wonder. Whether performing for friends or in front of a larger audience, magic can bring joy and excitement, making it a unique way to showcase your skills and creativity.",
+        types: ["Card Tricks", "Coin Tricks", "Stage Magic"]
+    },
+    "Soap Making": {
+        image: "images/soap_making.jpg",
+        description: "Soap making is the craft of creating your own bars of soap using various ingredients, scents, and molds. This hands-on hobby allows for creativity and personalization, as you can experiment with different recipes and designs. It can be a relaxing process, and the end result is both practical and rewarding, often resulting in unique gifts for friends and family.",
+        types: ["Cold Process", "Hot Process", "Melt and Pour"]
+    },
+    "Model Building": {
+        image: "images/model_building.jpg",
+        description: "Model building involves creating scale models of various objects, such as vehicles, planes, or ships. This hobby requires precision, attention to detail, and patience, as you assemble pieces to create a realistic representation. It can be a rewarding challenge, allowing you to enhance your crafting skills and appreciate the intricacies of design and engineering.",
+        types: ["Plastic Models", "Wood Models", "Paper Models"]
+    },
+    "Filmmaking": {
+        image: "images/filmmaking.jpg",
+        description: "Filmmaking is the art of creating films and videos, from scripting and directing to editing and producing. This multifaceted hobby allows for storytelling through visuals and sound, making it a powerful form of expression. Whether you’re working on short films, documentaries, or web series, filmmaking can be both a creative outlet and a collaborative experience.",
+        types: ["Documentary", "Short Films", "Web Series"]
+    },
+    "Astrology": {
+        image: "images/astrology.jpg",
+        description: "Astrology is the study of celestial bodies and their influence on human affairs. This intriguing hobby involves understanding astrological signs, charts, and interpretations, allowing you to explore personality traits, relationships, and life events through a cosmic lens. It can be a fascinating way to gain insight into yourself and others while connecting with a larger universe.",
+        types: ["Natal Astrology", "Horary Astrology", "Mundane Astrology"]
+    },
+    "Birdhouse Building": {
+        image: "images/birdhouse_building.jpg",
+        description: "Birdhouse building is a creative and rewarding activity that involves constructing cozy homes for birds in your backyard. This hobby encourages a connection with nature and wildlife, providing a safe habitat for various bird species. It allows for creativity in design and construction, making it a fulfilling project for nature enthusiasts and families alike.",
+        types: ["Wooden Birdhouses", "Hanging Birdhouses", "Decorative Birdhouses"]
+    },
+    "Metal Detecting": {
+        image: "images/metal_detecting.jpg",
+        description: "Metal detecting is an adventurous hobby that involves searching for hidden treasures using a metal detector. This activity can take you to historical sites, beaches, and parks, where you may discover coins, jewelry, and artifacts. It combines the thrill of exploration with the joy of uncovering history, making it an exciting way to spend your time outdoors.",
+        types: ["Beach Detecting", "Coin Shooting", "Relic Hunting"]
+    },
+    "Sailing": {
+        image: "images/sailing.jpg",
+        description: "Navigate the waters and enjoy the breeze.",
+        types: ["Catamaran Sailing", "Yacht Sailing", "Sailing Lessons"]
+    },
+    "Board Games": {
+        image: "images/board_games.jpg",
+        description: "Engage with friends and family through strategic and fun gameplay. Board games offer a unique way to bond with others, encouraging critical thinking, teamwork, and creativity. From classic favorites to modern strategy games, there’s something for everyone.",
+        types: ["Strategy Games", "Cooperative Games", "Party Games"]
+    },
+    "Fossil Hunting": {
+        image: "images/fossil_hunting.jpg",
+        description: "Explore the past by searching for ancient remains. Fossil hunting combines adventure with education, allowing you to discover and learn about prehistoric life. It’s a thrilling way to connect with Earth’s history and the science of paleontology.",
+        types: ["Amateur Paleontology", "Beach Fossil Collecting", "Dinosaur Track Sites"]
+    },
+    "Beekeeping": {
+        image: "images/beekeeping.jpg",
+        description: "Cultivate your own bees and harvest honey. Beekeeping is a rewarding hobby that contributes to environmental health. It involves understanding bee behavior and the intricacies of hive management, all while producing delicious honey and supporting pollination.",
+        types: ["Backyard Beekeeping", "Urban Beekeeping", "Honey Harvesting"]
+    },
+    "Calligraphy": {
+        image: "images/calligraphy.jpg",
+        description: "Create beautiful lettering with artistic flair. Calligraphy is the art of beautiful handwriting, often used for invitations, artwork, and personal expression. It encourages patience and attention to detail, allowing you to develop a unique style.",
+        types: ["Traditional Calligraphy", "Modern Calligraphy", "Brush Lettering"]
+    },
+    "Virtual Reality Gaming": {
+        image: "images/virtual_reality_gaming.jpg",
+        description: "Immerse yourself in digital worlds through cutting-edge technology. Virtual reality gaming offers an interactive experience like no other, transporting you to fantastical realms and thrilling adventures. It’s an innovative way to enjoy gaming with a heightened sense of presence.",
+        types: ["First-Person Shooters", "Adventure Games", "Simulation Games"]
+    },
+    "Parkour": {
+        image: "images/parkour.jpg",
+        description: "Navigate your environment with agility and speed. Parkour is a dynamic sport that emphasizes movement efficiency, creativity, and physical fitness. It encourages practitioners to overcome obstacles and challenges in both urban and natural settings.",
+        types: ["Freerunning", "Urban Exploration", "Obstacle Course Training"]
+    }
+};
+
+// Attach click event to each card
+document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", () => {
+        const hobby = card.querySelector("h3").textContent;
+
+        // Populate modal with hobby data
+        modalImage.src = hobbyData[hobby].image;
+        modalTitle.textContent = hobby;
+        modalDescription.textContent = hobbyData[hobby].description;
+        modalTypes.innerHTML = hobbyData[hobby].types.map(type => `<li>${type}</li>`).join("");
+
+        // Show modal with animation
+        modal.style.display = "block";
+    });
+});
+
+// Close modal on close button click
+closeModal.onclick = () => {
+    modal.style.display = "none";
+};
+
+// Close modal on clicking outside modal content
+window.onclick = (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+ // Get the menu toggle button and navbar list
+ const menuToggle = document.getElementById('menuToggle');
+ const navbarList = document.getElementById('navbarList');
+
+ // Add click event to toggle the menu
+ menuToggle.addEventListener('click', function() {
+     navbarList.classList.toggle('active');
+     menuToggle.classList.toggle('active');
+     console.log("Menu toggled");
+ });
+    </script>
+    <script src="js/script.js"></script>
+    <!-- Include AOS JavaScript for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
